@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <style type="text/css">
       /* Sartorius Font Import */
@@ -19,10 +19,8 @@
         font-weight: bold;
         font-style: normal;
       }
-
       /* Google Font Import */
       @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-
       /* Font Sizes */
       h1 {
         font-size: 52px;
@@ -39,7 +37,6 @@
         line-height: 30px;
         font-family: "Sartorius Rotis Sans", sans-serif;
       }
-
       @media screen and (max-width: 550px) {
         h1 {
           font-size: 36px;
@@ -58,22 +55,25 @@
       h1, h2, h3, h4, h5, h6, p, a {
         overflow-y: hidden;
       }
-
       /* Global */
       * {
         padding: 0;
         box-sizing: border-box;
         font-family: "Open Sans", sans-serif;
       }
-
+      html,body {
+        font-size: 100%;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+      }
       .w-100 {
         width: 100% !important;
       }
-
       a:hover {
         opacity: 0.7;
       }
-
       #col-left {
         float: left;
       }
@@ -82,19 +82,21 @@
       }
       /* Mobile CSS */
       @media only screen and (max-width: 660px) {
+        p, li, .link {
+          font-size: 24px !important;
+          line-height: 30px !important;
+        }
         .container {
           width: 85% !important;
           height: auto !important;
           margin: 0 auto !important;
         }
-
         #col-left,
         #col-right {
           float: none;
           width: 100%;
           margin: 8px auto;
         }
-
         .nav td {
           font-size: 12px !important;
           padding: 0 5px !important;
@@ -593,12 +595,12 @@
                                               penatibus et magnis dis parturient
                                               montes, nascetur ridiculus mus.
                                             </p>
-                                            <a href="#urlhere" target="_blank" style="color: #ffb81c;">Find out more</a> about Sartorius
+                                            <a href="#urlhere" target="_blank" class="link" style="color: #000001; font-size: 16px; line-height: 20px; font-family: 'Open Sans', sans-serif; text-decoration: underline;">Find out more</a>
                                           </div>
                                           <!-- Bullet Section. (margin keeps bullet inside 20px container) -->
-                                          <p>These are my talking points:</p>
+                                          <p style="color: #000001; font-size: 16px; line-height: 20px; font-family: 'Open Sans', sans-serif; font-weight: normal;">These are my talking points:</p>
                                           <div style="margin-left: 20px;">
-                                            <ul>
+                                            <ul style="color: #000001; font-size: 16px; line-height: 20px; font-family: 'Open Sans', sans-serif; font-weight: normal;">
                                               <li>Talking point 1</li>
                                               <li>Talking point 2</li>
                                               <li>Talking point 3</li>
@@ -943,12 +945,12 @@
                                               penatibus et magnis dis parturient
                                               montes, nascetur ridiculus mus.
                                             </p>
-                                            <a href="#urlhere" target="_blank" style="color: #ffb81c;">Find out more</a> about Sartorius
+                                            <a href="#urlhere" target="_blank" class="link" style="color: #000001; font-size: 16px; line-height: 20px; font-family: 'Open Sans', sans-serif; text-decoration: underline">Find out more</a>
                                           </div>
                                           <!-- Bullet Section. (margin keeps bullet inside 20px container) -->
-                                          <p>These are my talking points:</p>
+                                          <p style="color: #000001; font-size: 16px; line-height: 20px; font-family: 'Open Sans', sans-serif; font-weight: normal;">These are my talking points:</p>
                                           <div style="margin-left: 20px;">
-                                            <ul>
+                                            <ul style="color: #000001; font-size: 16px; line-height: 20px; font-family: 'Open Sans', sans-serif; font-weight: normal;">
                                               <li>Talking point 1</li>
                                               <li>Talking point 2</li>
                                               <li>Talking point 3</li>
@@ -1894,7 +1896,7 @@
                                     <div>
                                       <p>
                                         <span
-                                          style="color: #ffffff; font-size: 20px; line-height: 25px; font-family: 'Open Sans', sans-serif; font-weight: normal;"
+                                          style="color: #ffffff; font-size: 20px; line-height: 25px; font-family: 'Open Sans', sans-serif; font-weight: normal;" class="link"
                                           >About Sartorius</span
                                         >&nbsp;<br />
                                         <br />
